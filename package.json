@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --watchAll",
-    "watch": "nodemon"
+    "watch": "nodemon",
+    "build": "npx tsc"
   },
   "keywords": [],
   "author": "",
