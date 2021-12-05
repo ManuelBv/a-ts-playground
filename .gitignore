@@ -1,0 +1,7 @@
+/dist
+/build
+/node_modules
+/styles/.sass-cache
+/coverage
+.DS_Store
+.env
