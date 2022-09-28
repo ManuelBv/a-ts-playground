@@ -30,4 +30,5 @@ const trace = new LinkedList();
 trace.insertAtHead(10);
 trace.insertAtHead(20);
 
-console.log(trace);
+
+console.log('ggggg', trace);
