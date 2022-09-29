@@ -1,5 +1,6 @@
 // @ts-nocheck
 // linked list
+// from https://www.youtube.com/watch?v=gJjPWA8wpQg
 
 class LinkedList {
   constructor() {

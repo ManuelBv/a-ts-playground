@@ -1,5 +1,6 @@
 // @ts-nocheck
 // binary tree 
+// from https://www.youtube.com/watch?v=ZNH0MuQ51m4&t=3s
 
 class Node {
   constructor(value) {

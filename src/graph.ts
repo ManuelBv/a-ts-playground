@@ -1,5 +1,6 @@
 // @ts-nocheck
 // graph
+// from https://www.youtube.com/watch?v=cWNEl4HE2OE
 
 const airports = 'a b c d'.split(' ');
 const routes = [
