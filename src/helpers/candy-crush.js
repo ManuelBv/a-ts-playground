@@ -1,25 +1,47 @@
-var text = 'aaaaabbcccddeee'.split('');
+// @ts-nocheck (or nocheck)
 
-var current = text[0];
+var textArray = 'abbffffbaaac'.split('');
+
+var currentLetter = textArray[0];
 var i = 0;
 
-const checkNext = (letter, index, array) => {
-    for(j = index; j < array.length; j++) {
-        if (text[j] === letter) {
-            text[j] = '';
-        } else {
-            return j;
-        }
+const removeDuplicates = (index) => {
+  for (j = index; j < textArray.length; j++) {
+    if (textArray[j] === currentLetter) {
+      textArray[j] = '';
+      if (j === textArray.length - 1) {
+        textArray = textArray.join('').split('');
+      }
+    } else {
+      currentLetter = textArray[j];
+      textArray = textArray.join('').split('');
+      return;
     }
+  }
 }
 
-while(i < text.length) {
-    if (text[i+1] === current && text[i+2] === current){
-        i = checkNext(current, i, text);
-        continue;
+while (i < textArray.length) {
+  if (textArray[i + 1] === currentLetter && textArray[i + 2] === currentLetter) {
+    removeDuplicates(i);
+    if (i === 0 || i === 1) {
+      i = 0;
+    } else {
+      i -= 2;
     }
-    i++;
-    current = text[i];
+    continue;
+  }
+  i++;
+  currentLetter = textArray[i];
 }
 
-console.log('Final', text.join(''));
+console.clear();
+console.log('Final', textArray.join(''));
+
+
+
+
+
+// ----------- result below ------
+
+// console.clear();
+// console.log('booo');
